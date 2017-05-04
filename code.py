@@ -28,4 +28,8 @@ x = arange(1,len(y)+1)
 plot(x,y)
 title('Number of occurences of words')
 y0 = 1/y[y>1]
+
+c = average(arange(1,1+len(y0))/y0)
+plot(x,c/x)
+legend(('Experimental values','Theoretical values'))
 show()
